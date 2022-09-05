@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a,b,f,g;
+    float divide;
+    
+    cout << "Please enter two integer: ";
+    cin >> a;
+    cin >> b;
+    
+    f    = a / (float)b;
+
+    cout << endl <<"Division = " << f;
+    
+    return 0;
+
+}
