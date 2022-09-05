@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a,b,e;
+    
+    cout << "Please enter two integer: ";
+    cin >> a;
+    cin >> b;
+    
+    e = a*b; 
+    
+    cout << endl <<"Multiplication = " << e;
+    
+    return 0;
+
+}
