@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	char val;
+	int a=4;
+	int b=3;
+	int c;
+	cout<<"a.addition";
+	cout<<"b.substraction";
+	cin>>val;
+	switch(val)
+	{
+		case'a':
+			c=a+b;
+			cout<<c;
+			break;
+		case'b':
+			c=a-b;
+			cout<<c;
+			break;
+		default:
+			cout<<"provide a or b";
+	}
+	return 0;
+}
