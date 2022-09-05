@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a,b,d;
+    
+    cout << "Please enter two integer: ";
+    cin >> a;
+    cin >> b;
+    
+    d = a-b;
+
+    cout << endl <<"Difference = " << d;
+    
+    return 0;
+
+}
