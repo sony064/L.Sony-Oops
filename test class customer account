@@ -1,0 +1,56 @@
+#include <iostream>  
+using namespace std;  
+class customer  
+{  
+public:  
+    void cus()  
+    {  
+cout<< "customer details\n";  
+    }  
+};  
+class account  
+{  
+public:  
+    void acc()  
+    {  
+cout<< "account details\n";  
+    }  
+};  
+class RBI 
+{  
+public:  
+    void intrest_rate()  
+    {  
+cout<< "4 persentage\n";  
+    }  
+};  
+class SBI: public RBI, public customer, public account 
+{  
+public:  
+    void max_withdraw()  
+    {  
+cout<< "one lakh per day\n";  
+    }  
+};  
+class ICICI: public RBI, public customer, public account  
+{  
+public:  
+    void min_balance()  
+    {  
+cout<< "1000 rupees\n";  
+    }  
+};  
+int main() 
+{  
+    SBI obj1;
+    ICICI obj2;
+	obj1.cus();
+	obj1.acc();
+	obj1.intrest_rate();
+	obj1.max_withdraw();
+	obj2.cus();
+	obj2.acc();
+	obj2.intrest_rate();
+	obj2.min_balance();
+    return 0;  
+}
