@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+void area(int s)
+{
+	int c=s*s;
+	cout<<c<<"\n";
+}
+void area (int l,int b)
+{
+	
+	int x=l*b;
+	cout<<x<<"\n";
+}
+void area(double e)
+{
+	float f=3.14*e*e;
+	cout<<f<<"\n";
+}
+void area(double d,double h)
+{
+	float z=0.5*d*h;
+	cout<<z;
+}
+int main()
+{
+	area(4);
+	area(2,2);
+	area(2.2);
+	area(2.3,4.1);
+	return 0;
+};
