@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+inline int add(int a,int b)
+{
+	return a+b;
+}
+inline int sub(int a,int b)
+{
+	return a-b;
+}
+inline int mul(int a,int b)
+{
+	return a*b;
+}
+inline int div(int a,int b)
+{
+	return a/b;
+}
+int main()
+
+{
+	int a=8,b=6;
+	cout<<add(a,b)<<"\n";
+	cout<<sub(a,b)<<"\n";
+	cout<<mul(a,b)<<"\n";
+	cout<<div(a,b)<<"\n";
+	return 0;
+}
