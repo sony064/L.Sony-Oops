@@ -1,0 +1,79 @@
+#include<iostream>
+using namespace std;
+class student
+{
+	public:
+		void a()
+		{
+			cout<<"\n base ";
+		}
+};
+class college:public student
+{
+	public:
+		void b()
+		{
+			cout<<"\n d1 ";
+		}
+};
+class home
+{
+	public:
+		void c()
+		{
+			cout<<"\n d2 ";
+		}
+};
+class tution
+{
+	public:
+		void d()
+		{
+			cout<<"\n d3 ";
+		}
+};
+class oops:public college
+{
+	public:
+		void e()
+		{
+			cout<<"\n d4 ";
+		}
+};
+class work:public home
+{
+	public:
+		void f()
+		{
+			cout<<"\n d5 ";
+		}
+};
+class html:public tution
+{
+	public:
+		void g()
+		{
+			cout<<"\n d6 ";
+		}
+};
+class job:public oops,public work,public html
+{
+	public:
+		void h()
+		{
+			cout<<"\n d7 ";
+		}
+};
+int main()
+{
+    job o;
+	o.a();
+	o.b();
+	o.c();
+	o.d();
+	o.e();
+	o.f();
+	o.g();
+	o.h();
+	return 0;
+}
