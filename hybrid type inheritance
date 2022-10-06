@@ -1,0 +1,55 @@
+#include<iostream>
+using namespace std;
+class college
+{
+	public:
+		void a()
+		{
+			cout<<"\n base 1 ";
+		}
+};
+class mark
+{
+	public:
+		void m()
+		{
+			cout<<"\n base 2 ";
+		}
+};
+class roll:public college
+{
+	public:
+		void r()
+		{
+			cout<<"\n derived 1 ";
+		}
+};
+class sem:public college
+{
+	public:
+		void s()
+		{
+			cout<<"\n derived 2 ";
+		}
+};
+class extra:public mark,public sem
+{
+	public:
+		void e()
+		{
+			cout<<"\n derived 3 ";
+		}
+};
+int main()
+{
+	roll o1;
+	extra o2;
+	o1.a();
+	o1.r();
+	o2.a();
+	o2.m();
+	o2.s();
+	o2.e();
+	return 0;
+}
+
